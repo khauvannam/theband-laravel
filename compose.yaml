@@ -4,14 +4,14 @@ services:
   database:
     image: mysql:9.0
     volumes:
-      - database_data:/var/lib/mysql
+      - database_data1:/var/lib/mysql
     ports:
-      - '8008:3306'
+      - '3306:3306'
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: symfony
-      MYSQL_USER: symfony
+      MYSQL_DATABASE: laravel
+      MYSQL_USER: laravel
       MYSQL_PASSWORD: Ex@mple12345
 
 volumes:
-  database_data:
+  database_data1:
